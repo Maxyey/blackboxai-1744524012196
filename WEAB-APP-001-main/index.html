@@ -76,56 +76,24 @@
         </div>
     </main>
 
-    <!-- Theme Selector Modal -->
-    <div id="themeModal" class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm hidden items-center justify-center z-50">
-        <div class="modal-content backdrop-blur rounded-2xl p-8 w-11/12 max-w-2xl shadow-2xl transition-all duration-300">
-            <div class="flex justify-between items-center mb-6">
-                <div>
-                    <h3 class="text-2xl font-semibold mb-1 theme-text">Customize Your Theme</h3>
-                    <p class="theme-text opacity-60">Choose from our beautiful collection of themes</p>
-                </div>
-                <button id="closeThemeModal" class="p-2 rounded-full transition-all duration-300" data-accent>
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6" id="themeOptions">
-                <!-- Themes will be added here -->
-            </div>
-            <div class="mt-6 pt-6 border-t theme-border">
-                <p class="theme-text opacity-60 flex items-center gap-2">
-                    <i class="fas fa-info-circle" data-accent></i>
-                    Click any theme to preview and apply
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Admin Login Modal -->
-    <div id="adminModal" class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm hidden items-center justify-center z-[9999]">
+    <!-- GitHub Token Modal -->
+    <div id="githubModal" class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm hidden items-center justify-center z-[9999]">
         <div class="bg-white w-full max-w-md rounded-2xl shadow-2xl mx-4">
-            <!-- Header -->
             <div class="flex justify-between items-center p-6 border-b">
-                <h3 class="text-xl font-semibold theme-text">Admin Login</h3>
-                <button id="closeAdminModal" class="p-2 hover:bg-gray-100 rounded-full transition-all duration-300">
+                <h3 class="text-xl font-semibold theme-text">Setup GitHub Token</h3>
+                <button id="closeGithubModal" class="p-2 hover:bg-gray-100 rounded-full transition-all duration-300">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
-            <!-- Form -->
-            <form id="adminLoginForm" class="p-6 space-y-4">
+            <form id="githubForm" class="p-6 space-y-4">
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">Email</label>
-                    <input type="email" id="adminEmail" 
+                    <label class="block text-sm font-medium text-gray-700">GitHub Token</label>
+                    <input type="password" id="githubToken" required 
                            class="mt-1 block w-full px-3 py-2 rounded-md border border-gray-300 bg-white shadow-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                           autocomplete="email">
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-700">Password</label>
-                    <input type="password" id="adminPassword" 
-                           class="mt-1 block w-full px-3 py-2 rounded-md border border-gray-300 bg-white shadow-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
-                           autocomplete="current-password">
+                           placeholder="Enter your GitHub token">
                 </div>
                 <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors duration-300">
-                    Login
+                    Save Token
                 </button>
             </form>
         </div>
@@ -135,5 +103,7 @@
     <script src="js/github-storage.js"></script>
     <script src="js/storage.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/admin.js"></script>
 </body>
 </html>
+</create_file>
