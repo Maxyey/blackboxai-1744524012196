@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // GitHub token setup
     githubBtn.addEventListener('click', () => {
+        console.log('GitHub button clicked'); // Debug log
         githubModal.classList.remove('hidden');
         githubModal.classList.add('flex');
         const currentToken = localStorage.getItem('github_token') || '';
