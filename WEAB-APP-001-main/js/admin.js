@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         githubModal.classList.add('flex');
         const currentToken = localStorage.getItem('github_token') || '';
         document.getElementById('githubToken').value = currentToken;
+        console.log('Current token set:', currentToken); // Debug log
     });
 
     closeGithubModal.addEventListener('click', () => {
